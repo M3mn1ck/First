@@ -24,6 +24,25 @@
     </header>
 
     <main>
+        <section id="sign-in">
+            <h2>Авторизация</h2>
+            <div id="feedback-container">
+                <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+                    <label for="name">Логин</label>
+                    <input type="text" id="login" name="login" required>
+        
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <label>
+                        <input type="checkbox" id="saveme" name="saveme" required>
+                        Запомнить меня
+                    </label>
+        
+                    <button type="submit">Войти</button>
+                </form>
+            </div>
+        </section>
         <section id="hero">
             <h1>Добро пожаловать на нашу домашнюю страницу</h1>
             <img src="person.png" alt="Картинка">
