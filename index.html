@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Домашняя страница</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#content">Обо мне</a></li>
+                <li><a href="#table">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sign-in">
+            <h2>Авторизация</h2>
+            <div id="feedback-container">
+                <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+                    <label for="name">Логин</label>
+                    <input type="text" id="login" name="login" required>
+        
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <label>
+                        <input type="checkbox" id="saveme" name="saveme" required>
+                        Запомнить меня
+                    </label>
+        
+                    <button type="submit">Войти</button>
+                </form>
+            </div>
+        </section>
+        <section id="hero">
+            <h1>Добро пожаловать на нашу домашнюю страницу</h1>
+            <img src="person.png" alt="Картинка">
+        </section>
+
+        <section id="content">
+            <h2>Обо мне</h2>
+            <p>Я Михаил Бургер. Это моя первая пробная работа с HTML+CSS.</p>
+        </section>
+
+        <section id="feedback">
+            <h2>Обратная связь</h2>
+            <div id="feedback-container">
+                <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+                    <label for="name">ФИО</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+
+                    <p>Откуда узнали о нас:</p>
+                    <p>
+                        <label>
+                            <input type="radio" name="source" value="radio1">
+                            В университете
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="source" value="radio2">
+                            В садике
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="source" value="radio3">
+                            В школе
+                        </label>
+                    </p>
+
+                    <label for="type">Тип обращения</label>
+                    <select id="type" name="type">
+                        <option value="жалоба">Жалоба</option>
+                        <option value="предложение">Предложение</option>
+                    </select>
+
+                    <label for="message">Текст сообщения</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <label for="attachments">Вложения</label>
+                    <input type="file" id="attachments" name="attachments" accept="image/*">
+
+                    <label>
+                        <input type="checkbox" id="consent" name="consent" required>
+                        Даю согласие на обработку персональных данных
+                    </label>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="game">
+            <h2>Оценка игр</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Оценка</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>CS:GP</th>
+                        <th>7/10</th>
+                    </tr>
+                    <tr>
+                        <th>Dota 2</th>
+                        <th>5/10</th>
+                    </tr>
+                    <tr>
+                        <th>Genshin</th>
+                        <th>0/10</th>
+                    </tr>
+                    <tr>
+                        <th>League of Legend</th>
+                        <th>6/10</th>
+                    </tr>
+                    <tr>
+                        <th>CyberPunk 2077</th>
+                        <th>10/10</th>
+                    </tr>
+                    <tr>
+                        <th>Valorant</th>
+                        <th>8/10</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>Контактная информация: memnikmain@gmail.com</p>
+        <p>&copy; 2023 Все права защищены</p>
+    </footer>
+</body>
+
+</html>
